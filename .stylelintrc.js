@@ -4,7 +4,12 @@
  * stylelint-config-standard 扩展规则集：https://github.com/stylelint/stylelint-config-standard
  */
 module.exports = {
-    extends: ['stylelint-config-standard', 'stylelint-config-prettier', 'stylelint-config-standard-vue'],
+    extends: [
+        'stylelint-config-standard',
+        'stylelint-config-prettier',
+        'stylelint-config-recommended-less',
+        'stylelint-config-standard-vue'
+    ],
     rules: {
         // 颜色值避免直接使用颜色名
         'color-named': [
