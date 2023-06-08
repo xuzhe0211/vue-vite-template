@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# 去除默认命令npm run test, 修改为我们在package.json里定义好的检查命令
+yarn precommit

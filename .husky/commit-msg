@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# 加入commitlint 检查命令, 对代码commit时提交规范进行检查
+yarn commitlint --edit $1
