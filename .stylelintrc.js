@@ -10,6 +10,15 @@ module.exports = {
         'stylelint-config-recommended-less',
         'stylelint-config-standard-vue'
     ],
+    overrides: [
+        {
+            files: ['**/*.less'],
+            customSyntax: 'postcss-less',
+            rules: {
+                'at-rule-no-unknown': null
+            }
+        }
+    ],
     rules: {
         // 颜色值避免直接使用颜色名
         'color-named': [
